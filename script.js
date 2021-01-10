@@ -2,7 +2,7 @@ const addBtn = document.querySelector('#add');
 
 const notes = JSON.parse(localStorage.getItem('notes'));
 
-if (notes.length > 0) {
+if (notes && notes.length > 0) {
   notes.forEach(note => addNewNote(note));
 }
 
